@@ -860,8 +860,9 @@ footer p {
         width: 250px;
     }
     
-    .section-container .content h1 {
-        font-size: 2.5rem;
+    .section-container .content .title span {
+        text-align: center;
+        font-size: 1.8rem;
     }
 
     .section-container .content p {
@@ -869,8 +870,7 @@ footer p {
     }
 
     .section-container .content .description {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+        font-size: 1.4rem;
     }
 
     .section-container .content .btn {
@@ -1109,8 +1109,13 @@ footer p {
     }
 
     /* Navbar Start */
+
+    nav {
+        padding: 0rem;
+    }
+    
     nav .logo a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     nav .checkbox {
@@ -1119,7 +1124,7 @@ footer p {
 
     nav ul {
         position: fixed;
-        top: 70px;
+        top: 65px;
         right: -100%;
         width: 100%;
         height: calc(100vh - 70px);
@@ -1137,7 +1142,7 @@ footer p {
 
     /* Home Section Start */
     .section {
-        width: 209%;
+        width: 100%;
         background-color: rgb(250, 250, 250);
     }
     
@@ -1147,55 +1152,67 @@ footer p {
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 8rem 1rem;
+        padding: 7rem 1rem;
         gap: 3rem;
     }
 
+    content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .content p {
         font-size: 1.2rem;
     }
 
-    .content .title {
-        font-size: 2.5rem;
+    .content .title span {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
     }
+    
     .content .description {
+        text-align: center;
         padding: 1rem 0;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
-    .content .social-links {
+    .content .social-icon {
+        margin-top: 2px;
         display: flex;
         gap: 1rem;
     }
 
-    .content .social-links a {
-        color: #000000;
-        font-size: 1.5rem;
+    .btn {
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .content .btn {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+    .image img {
+        margin-top: rem;
+        width: 250px;
     }
+    
     /* Home Section End */
 
 
     /* About Section */
     .about-section {
-        width: 209%;
+        width: 100%;
         background-color: #f5f5f5;
     }
 
     .about-container {
         flex-direction: column;
         align-items: center;
-        padding: 5rem;
+        padding: 2rem;
     }
 
     .about-img {
         width: 100%;
-        margin-bottom: 2rem;
+        margin-top: -3rem;
     }
 
     .about-img img {
@@ -1205,13 +1222,20 @@ footer p {
 
     .about-content {
         width: 100%;
+        padding: 0rem;
+        margin-top: -3rem;
     }
 
-    .about-content .title {
-        font-size: 2.5rem;
+    .about-content h2 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .about-content h3 {
+        font-size: 1.5rem;
     }
 
-    .about-content .description {
+    .about-content p {
         font-size: 1.2rem;
     }
 
@@ -1225,7 +1249,7 @@ footer p {
     /* Skills Section Start */
 
     .skills-section {
-        width: 209%;
+        width: 100%;
         background-color: #fafafa;
     }
 
@@ -1282,7 +1306,7 @@ footer p {
     /* Projects Section Start */
 
     .projects-section {
-        width: 209%;
+        width: 100%;
         background-color: white;
     }
 
@@ -1350,7 +1374,7 @@ footer p {
 
 
     .contacts-section {
-        width: 209%;
+        width: 100%;
         padding: 80px 0;
         background-color: rgb(250, 250, 250);
     }
@@ -1360,7 +1384,7 @@ footer p {
 
     /* Footer Section Start */
     footer {
-        width: 209%;
+        width: 100%;
         background-color: #ffffff;
         color: rgb(0, 0, 0);
         text-align: center;
@@ -1369,7 +1393,7 @@ footer p {
 
     footer p {
         margin: 0;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* Footer Section End */
@@ -1377,6 +1401,7 @@ footer p {
 }
 
 /* Mobile View End */
+
 
 
 
