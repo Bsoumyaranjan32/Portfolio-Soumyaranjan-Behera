@@ -62,6 +62,7 @@ nav .logo a {
     font-size: 1.2rem;
     font-weight: 700;
     color: #0e0e0e;
+    cursor: default;
 }
 
 nav .checkbox {
@@ -168,6 +169,15 @@ nav ul li a.active::before {
     color: #0e0e0e;
     margin-bottom: 1rem;
     letter-spacing: 0.05rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0s;
+}
+
+.content .title {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .content .title span {
@@ -207,6 +217,9 @@ nav ul li a.active::before {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .social-icon .icon a {
@@ -305,6 +318,9 @@ nav ul li a.active::before {
     margin-top: 45px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .bt:hover {
@@ -333,6 +349,9 @@ nav ul li a.active::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .image img {
@@ -362,6 +381,9 @@ nav ul li a.active::before {
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: #000;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .about-container {    
@@ -370,6 +392,9 @@ nav ul li a.active::before {
     align-items: center;
     justify-content: center;
     padding: 0rem 8rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .about-image {
@@ -461,6 +486,9 @@ nav ul li a.active::before {
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: #000;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .skills-container {
@@ -470,6 +498,9 @@ nav ul li a.active::before {
     flex-wrap: wrap;
     gap: 5rem;
     padding: 0rem 8rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .skill-box {
@@ -559,6 +590,9 @@ nav ul li a.active::before {
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: #000;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .projects-container {
@@ -567,6 +601,9 @@ nav ul li a.active::before {
     justify-content: center;
     gap: 2rem;
     padding: 0rem 8rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0s;
 }
 
 .project-box {
@@ -716,27 +753,6 @@ nav ul li a.active::before {
 /* Contact Section End */
 
 
-
-
-/* Footer Section */
-footer {
-    padding: 20px 0px;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-footer p {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* Footer Section End */
-
-
-
 /* Scroll to Top Button */
 .scroll-to-top {
     position: fixed;
@@ -778,6 +794,64 @@ footer p {
 }
 
 /* Scroll to Top Button End */
+
+
+/* Footer Section */
+footer {
+    padding: 20px 0px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Footer Section End */
+
+
+/* Animation Start */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Animation End */
 
 
 /* Responsive Design */
@@ -1402,6 +1476,7 @@ footer p {
 }
 
 /* Mobile View End */
+
 
 
 
